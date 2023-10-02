@@ -4,7 +4,11 @@ const resultEl = document.getElementById("result");
 let num;
 btnEl.addEventListener("click", (e) => {
   num = inputEl.value;
-
+  if (!Number.isInteger(+num)) {
+    inputEl.value = "";
+    resultEl.innerHTML = "The result will be shown here";
+    return alert("input number should be an integer");
+  }
   if (num > 3999 || num < 1) {
     alert("input number should be in the range of 1-3999");
     inputEl.value = "";

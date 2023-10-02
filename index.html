@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roman Numeral Converter</title>
@@ -10,7 +14,7 @@
   <body>
     <h1 id="title">Roman Numeral Converter</h1>
     <div class="container" id="guidance">
-        <h2>Guidance</h2>
+      <h2>Guidance</h2>
       <table>
         <tr>
           <th>Integer numerals</th>
@@ -28,7 +32,8 @@
           <td>900</td>
           <td>1000</td>
         </tr>
-        <th>Roman numerals</th>
+        <tr>
+          <th>Roman numerals</th>
           <td>I</td>
           <td>IV</td>
           <td>V</td>
@@ -44,9 +49,12 @@
           <td>M</td>
         </tr>
       </table>
-      <p>*Your number should be in the range of 1-3999</p>
+      <p class="note">
+        <span class="material-symbols-outlined"> star </span
+        ><span>Your number should be in the range of 1-3999</span>
+      </p>
     </div>
-      <div class="container" id="main">
+    <div class="container" id="main">
       <label for=""
         >Please enter an integer number and then press the convert button:<input
           type="number"
